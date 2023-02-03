@@ -1,29 +1,13 @@
-<script setup>
-    import "bootstrap-icons/font/bootstrap-icons.css";
-    import Logo from '../components/logo/Logo.vue'
-    import Item from '../components/item/Item.vue'
-    import CardLists from '../components/card-lists/CardLists.vue'
-</script>
-
 <template>
-    <div class="container"> 
-        <header class="header"> 
-            <Logo />
-        </header>
-        <nav class="navigation">
-
-        </nav>
-        <div class="content">
-            <aside class="aside">
-                <Item />
-            </aside>   
-            <section class="section">
-                <CardLists />
-            </section>   
-        </div>
-    </div>
+  <HomeComponent></HomeComponent>
 </template>
 
+<script setup>
+  import HomeComponent from '@/components/home/HomeComponent.vue'
+</script>
+
 <style>
-    @import '../styles/Home.css';
+html {
+  overflow-y: hidden;
+}
 </style>
