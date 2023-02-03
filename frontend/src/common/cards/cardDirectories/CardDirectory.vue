@@ -2,21 +2,35 @@
     <div class="content">
         <v-card class="card-directory-home">
             <div class="card-content">
-                <v-card-title id="title">
-                    <i class="bi bi-clock-history"></i>
-                    RECENT
+                <v-card-title id="title" >
+                    <i :class="icon"></i>
+                    {{ name }}
                 </v-card-title>
                 <v-card-text id="card-list">
                     <Card name="" description=""></Card>
                 </v-card-text>
             </div>
+           
         </v-card>
     </div>
 </template>
 
 <script setup>
 import Card from "@/common/cards/card/Card.vue"
+
 </script>
+
+<script>
+export default {
+    props: {
+        name: '',
+        icon: ''
+    }  
+    
+}
+
+</script>
+
 
 <style>
     .content {

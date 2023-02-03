@@ -16,7 +16,7 @@
                 </li>
             </ul>
         </v-card>
-        <CardDirectory></CardDirectory>
+        <CardDirectory name="RECENT" icon="bi bi-clock-history"></CardDirectory>
     </v-main>
     
 </template>
